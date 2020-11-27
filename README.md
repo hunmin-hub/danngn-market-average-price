@@ -1,5 +1,9 @@
 # danngn-market-average-price
  당근마켓 평균시세 검색
+ <br>
+ <br>
+* requests 패키지 <br>
+* beautifulSoup 패키지 <br>
  
  <br>
  <h2>구성</h2>
