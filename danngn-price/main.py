@@ -17,7 +17,7 @@ section_result=market_soup.find_all("article",{"class":"flea-market-article flat
 
 ## Selenium 사용
 driver = webdriver.Chrome('./driver/chromedriver')
-driver.implicitly_wait(2)
+driver.implicitly_wait(1)
 driver.get("https://www.daangn.com/search/"+keyword)
 
 #더보기 버튼 2번클릭
