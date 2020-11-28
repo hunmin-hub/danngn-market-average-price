@@ -4,6 +4,8 @@
  <br>
 * requests 패키지 <br>
 * beautifulSoup 패키지 <br>
+* selenium 패키지
+* flask 패키지
  
  <br>
  <h2>구성</h2>
@@ -12,6 +14,6 @@
  
  * 추가할것<br>
  1. 더보기 버튼 -> 더 많은 가격 목록 확보  (완료)<br>
- 2. 웹 연동 <br>
- 3. Keyword 상호작용 <br>
+ 2. 웹 연동 (완료)<br>
+ 3. Keyword 상호작용 (완료)<br>
  4. Keyword 세분화 결정 <br>
