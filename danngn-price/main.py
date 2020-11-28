@@ -51,6 +51,7 @@ def scrapping_market(keyword, button_count) :
             price_div.insert(i - 1, driver.find_element_by_xpath(path_url).text)
         except NoSuchElementException:
             break
+
     # 2 크롤링한 Str 형태의 가격들을 리스트에 저장 (공백포함)
     """
     price_all=[]
@@ -81,6 +82,8 @@ def scrapping_market(keyword, button_count) :
         if i == "무료나눔":
             free_count += 1  # 무료나눔 갯수
             continue  # 무료나눔은 계산에서 제외
+        elif i == "-":
+            continue
         else:
             count += 1
             a = pti.price_to_int(i)
