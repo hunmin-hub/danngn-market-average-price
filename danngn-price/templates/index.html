@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>당근 마켓 시세 검색</title>
+</head>
+<body>
+    <h1>당근 마켓 시세 검색</h1>
+    <form action="/post" method="post">
+        <input type="text" name="input" onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit} placeholder="검색할 품목을 입력해주세요." required />
+        <input type="submit" value="검색" onclick="alert('시세 검색을 시작합니다.')" />
+        <p>시세를 측정할 물품 개수 :
+        <select name="count">
+            <option value=6>6</option>
+            <option value=18>18</option>
+            <option value=30>30</option>
+            <option value=42>42</option>
+            <option value=54>54</option>
+        </select>
+        </p>
+    </form>
+</body>
+</html>
