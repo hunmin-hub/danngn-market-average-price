@@ -4,6 +4,8 @@
  <br>
 * requests 패키지 <br>
 * beautifulSoup 패키지 <br>
+* selenium 패키지
+* flask 패키지
  
  <br>
  <h2>구성</h2>
