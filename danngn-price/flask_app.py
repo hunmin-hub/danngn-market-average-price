@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 import main as proc
 
 app = Flask(__name__)
@@ -6,6 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("index.html")
+
 
 @app.route('/search',methods=['POST'])
 def search():
@@ -16,4 +18,6 @@ def search():
         return render_template("warning.html")
     else:
         return render_template("search.html", searchingBy=product, searchingCt=button_count, searchingPrice=middle_price)
-app.run(host="127.0.0.1")
+
+##배포시 주석처리
+#app.run(host="127.0.0.1")

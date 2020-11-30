@@ -24,8 +24,10 @@ def scrapping_market(keyword, button_count) :
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('headless')
     chrome_options.add_argument("--disable-gpu")
-
-    driver = webdriver.Chrome('./driver/chromedriver', chrome_options=chrome_options)
+    ## 배포판
+    driver = webdriver.Chrome('/app/.chromedriver/bin/chromedriver', chrome_options=chrome_options)
+    ## 로컬
+    #driver = webdriver.Chrome('./driver/chromedriver', chrome_options=chrome_options)
     driver.implicitly_wait(1)
     driver.get("https://www.daangn.com/search/" + keyword)
 
